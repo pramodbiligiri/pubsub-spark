@@ -16,7 +16,7 @@ It works when run as a standalone program. But when run using spark-submit, hang
 $ gcloud auth application-default login
 ```
 2. Set up correct project id and subscription id in the main() method of PubsubConsumer.java
-3. mvn clean package
+3. mvn clean compile
 4. mvn exec:java -Dexec.classpathScope="compile" -Dexec.mainClass=spark.pubsub.example.PubsubConsumer
 
 On the console you should see some log messages followed by messages from whichever topic subscription you've
